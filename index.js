@@ -1,90 +1,9 @@
- 0
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- let votos = ["C", "B", "A", "C", "B", "A", "C", "B", "A", "C", "A","B"];
+ let votos = ["C", "B", "C", "A", "C", "A", "C", "A","B","A","B","B","C","A","B","B"];
 
 urna(votos);
 
 function urna(votos) {
-  // Escreva seu código aqui
+ 
   let result
   let candidatoA = 0;
   let candidatoB = 0;
@@ -110,185 +29,22 @@ function urna(votos) {
     result = "empate"
   }
 
-  console.log("votos do Candidato A = " + candid 0
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  atoA)
-  console.log("votos do Candidato B = " +  0
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  )
+  console.log("votos do Candidato A = " + candidatoA)
+  console.log("votos do Candidato B = " + candidatoB)
   console.log("votos do Candidato C = " + candidatoC)
 
-  if (result == "empate") {
-    if (candidatoA == candidatoB) {
-      console.log("Empate entre o candidato A e candidato B")
-    } else if (candidatoA == candidatoC) {
-      console.log("Empate entre o candidato A e candidato C")
-    } else if (candidatoB == candidatoC) {
-      console.log("Empate entre o candidato B e candidato C")
+  if (result == "empate") {  
+    if (candidatoA == candidatoB && candidatoA != candidatoC) {
+      return result = "Empate entre o candidato A e candidato B"
+    } else if (candidatoA == candidatoC && candidatoA != candidatoB) {
+      return result = "Empate entre o candidato A e candidato C"
+    } else if (candidatoB == candidatoC && candidatoB != candidatoA) {
+      return result = "Empate entre o candidato B e candidato C"
     } else  {
-      console.log("Empate entre o candidato A, candidato B e candidato C")
-    }
-
+     return result = "Empate entre os candidatos A, B e C"
+    }  
   }  
 
-  return result
+  return "Vitoria do candidato " + result
 
 }
